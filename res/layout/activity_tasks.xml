@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasksActivity"
+    android:background="@color/black">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="times new roman"
+        android:text="My Daily Tasks"
+        android:textColor="#FFC0CB"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rdRunning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="times new roman"
+        android:text="Running"
+        android:textSize="20sp"
+        android:textColor="#FFB6C1"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkRun5km"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="5 km"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/rdRunning"
+        app:layout_constraintBottom_toTopOf="@id/chkRun10km"/>
+
+    <CheckBox
+        android:id="@+id/chkRun10km"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="10 km"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/chkRun5km"
+        app:layout_constraintBottom_toTopOf="@id/chkRun15km"/>
+
+    <CheckBox
+        android:id="@+id/chkRun15km"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="15 km"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/chkRun10km"/>
+
+    <RadioButton
+        android:id="@+id/rdReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:fontFamily="times new roman"
+        android:text="Reading"
+        android:textColor="#FFB6C1"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkRun15km" />
+
+    <CheckBox
+        android:id="@+id/chkRead2p"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="2 pages"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/rdReading"
+        app:layout_constraintBottom_toTopOf="@id/chkRead5p"/>
+
+    <CheckBox
+        android:id="@+id/chkRead5p"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="5 pages"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/chkRead2p"
+        app:layout_constraintBottom_toTopOf="@id/chkRead10p"/>
+
+    <CheckBox
+        android:id="@+id/chkRead10p"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="10 pages"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/chkRead5p"/>
+
+    <RadioButton
+        android:id="@+id/rdWriting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="times new roman"
+        android:text="Writing"
+        android:textColor="#FFB6C1"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkRead10p"/>
+
+    <CheckBox
+        android:id="@+id/chkWrite1p"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="1 page"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/rdWriting"
+        app:layout_constraintBottom_toTopOf="@id/chkWrite5p"/>
+
+    <CheckBox
+        android:id="@+id/chkWrite5p"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="5 pages"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/chkWrite1p"
+        app:layout_constraintBottom_toTopOf="@id/chkWrite10p"/>
+
+    <CheckBox
+        android:id="@+id/chkWrite10p"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:fontFamily="times new roman"
+        android:text="10 pages"
+        android:textColor="#FFB6C1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/chkWrite5p"/>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:onClick="onBtnViewClick"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#79305a"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="550dp"
+        android:backgroundTint="@color/white"
+        android:onClick="onBtnBackClick"
+        android:text="Back"
+        android:textColor="#79305a"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:backgroundTint="@color/white"
+        android:onClick="onBtnResetClick"
+        android:text="Reset"
+        android:textColor="#79305a"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
